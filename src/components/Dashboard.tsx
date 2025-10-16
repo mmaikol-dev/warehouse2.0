@@ -194,7 +194,7 @@ function DashboardContent({ stats, lowStockProducts }: any) {
             <div>
               <p className="text-sm font-medium text-gray-600 mb-1">Stock Value</p>
               <p className="text-2xl font-bold text-gray-900">
-                ${stats.totalStockValue.toLocaleString()}
+                Ksh{stats.totalStockValue.toLocaleString()}
               </p>
             </div>
             <div className="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center">

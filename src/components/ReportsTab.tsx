@@ -103,7 +103,7 @@ export function ReportsTab() {
             <div>
               <p className="text-sm font-medium text-gray-600">Stock Value</p>
               <p className="text-xl lg:text-2xl font-bold text-gray-900">
-                ${dashboardStats.totalStockValue.toLocaleString()}
+              Ksh{dashboardStats.totalStockValue.toLocaleString()}
               </p>
             </div>
             <div className="text-2xl">💰</div>
@@ -263,7 +263,7 @@ export function ReportsTab() {
                       {stock.quantity}
                     </td>
                     <td className="px-4 lg:px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                      ${((stock.quantity || 0) * (stock.product?.unitPrice || 0)).toFixed(2)}
+                    Ksh{((stock.quantity || 0) * (stock.product?.unitPrice || 0)).toFixed(2)}
                     </td>
                   </tr>
                 ))}
