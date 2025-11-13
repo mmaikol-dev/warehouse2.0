@@ -206,7 +206,7 @@ export function ProductsTab() {
                         {product.category?.name || "—"}
                       </td>
                       <td className="px-4 lg:px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                        ${product.unitPrice.toFixed(2)}
+                        ksh{product.unitPrice.toFixed(2)}
                       </td>
                       <td className="px-4 lg:px-6 py-4 whitespace-nowrap">
                         <span className={`inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium ${

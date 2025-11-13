@@ -253,7 +253,7 @@ export function ReportsTab() {
                       {stock.quantity}
                     </td>
                     <td className="px-4 lg:px-6 py-4 whitespace-nowrap text-sm text-gray-900">
-                      ${((stock.quantity || 0) * (stock.product?.unitPrice || 0)).toFixed(2)}
+                      ksh{((stock.quantity || 0) * (stock.product?.unitPrice || 0)).toFixed(2)}
                     </td>
                   </tr>
                 ))}
