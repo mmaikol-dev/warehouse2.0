@@ -87,7 +87,7 @@ export function ReportsTab() {
       </div>
 
       {/* Overview Stats */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 lg:gap-6">
         <div className="bg-white p-4 lg:p-6 rounded-lg border border-gray-200">
           <div className="flex items-center justify-between">
             <div>
