@@ -333,16 +333,10 @@ function DashboardContent({ stats, lowStockProducts, recentMovements, onCardClic
                   ${((stats.totalProducts || 0) * 25.99).toLocaleString()}
                 </p>
               </div>
-              <div className="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center">
-                <span className="text-2xl">💰</span>
-              </div>
+             
             </div>
           </div>
-          {/* Hover Popup */}
-          <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-4 py-3 bg-gray-900 text-white text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap z-10 shadow-lg">
-            
-            <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-900"></div>
-          </div>
+          
         </div>
       </div>
 
