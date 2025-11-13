@@ -324,20 +324,7 @@ function DashboardContent({ stats, lowStockProducts, recentMovements, onCardClic
           </div>
         </div>
 
-        <div className="relative group">
-          <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
-            <div className="flex items-center justify-between">
-              <div>
-                <p className="text-sm font-medium text-gray-600 mb-1">Total Value</p>
-                <p className="text-2xl font-bold text-green-600">
-                  ${((stats.totalProducts || 0) * 25.99).toLocaleString()}
-                </p>
-              </div>
-             
-            </div>
-          </div>
-          
-        </div>
+        
       </div>
 
       {/* Low Stock Alert */}
