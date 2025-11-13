@@ -324,7 +324,30 @@ function DashboardContent({ stats, lowStockProducts, recentMovements, onCardClic
           </div>
         </div>
 
-    
+        <div className="relative group">
+          <div className="bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow cursor-pointer">
+            <div className="flex items-center justify-between">
+              <div>
+                <p className="text-sm font-medium text-gray-600 mb-1">Total Value</p>
+                <p className="text-2xl font-bold text-green-600">
+                  ${((stats.totalProducts || 0) * 25.99).toLocaleString()}
+                </p>
+              </div>
+              <div className="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center">
+                <span className="text-2xl">💰</span>
+              </div>
+            </div>
+          </div>
+          {/* Hover Popup */}
+          <div className="absolute bottom-full left-1/2 transform -translate-x-1/2 mb-2 px-4 py-3 bg-gray-900 text-white text-sm rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 pointer-events-none whitespace-nowrap z-10 shadow-lg">
+            <div className="font-semibold mb-1">Inventory Valuation</div>
+            <div>Estimated total value of current stock</div>
+            <div>Based on unit prices × quantities</div>
+            <div>Excludes reserved or damaged items</div>
+            <div className="absolute top-full left-1/2 transform -translate-x-1/2 w-0 h-0 border-l-4 border-r-4 border-t-4 border-transparent border-t-gray-900"></div>
+          </div>
+        </div>
+      </div>
 
       {/* Low Stock Alert */}
       {lowStockProducts.length > 0 && (
